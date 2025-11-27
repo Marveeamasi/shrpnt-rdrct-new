@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.default-font {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root {
+  --primary: #296fc2;
+  --mild: #6d767d;
+  --accent-blue: #3389e5;
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: var(--primary);
+  }
+
+  .text-mild {
+    color: var(--mild);
+  }
+
+  .text-accent-blue {
+    color: var(--accent-blue);
+  }
+}
+
+.btn{
+  transition: all .2s ease;
+  box-shadow: 0 2px 5px rgba(0, 103, 184, .2);
+}
+
+btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 103, 184, .3);
+}
